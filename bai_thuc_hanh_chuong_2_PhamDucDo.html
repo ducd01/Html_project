@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sinh Viên</title>
+</head>
+<body>
+    <form method="post" >
+        <h2>Thêm sinh viên</h2>
+        <table>
+            <tr>
+                <td>Mã sinh viên</td>
+                <td>
+                    <input type= "text" name ="msv" required/> 
+                </td>
+            </tr>
+            <tr>
+                <td>Họ và tên</td>
+                <td>
+                    <input type="text" name="ten" required />
+                </td>
+            </tr>
+           <tr>
+                <td>Email</td>
+                <td>
+                    <input type="email" name="email" required />
+                </td>
+           </tr>
+            <tr>
+                <td>Ngày sinh</td>
+                <td>
+                    <input type="date" name="ngaysinh" required />
+                </td>
+            </tr>
+            <tr>
+                <td>Giới tính</td>
+                <td>
+                    <input type="radio" value="nam" name="gioitinh" checked>Nam
+                    <input type="radio" value="nu" name="gioitinh" >Nữ
+                </td>
+            </tr>
+            <tr>
+                <td>Ghi chú</td>
+                <td>
+                    <textarea name="ghichu"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td >
+                    <button type="submit">Thêm sinh viên</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+    <h2>Danh sách sinh viên</h2>
+    <table border="1" width="100%">
+        <thead>
+            <tr>
+                <th>STT</th>
+                <th>Mã sinh viên</th>
+                <th>Họ tên</th>
+                <th>Email</th>
+                <th>Giới tính</th>
+                <th>Ngày sinh</th>
+                <th>Tuỳ chọn</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>2251061742</td>
+                <td>Phạm Đức Đô</td>
+                <td>odcud1234@gmail.com</td>
+                <td>Nam</td>
+                <td>01/02/2004</td>
+                <td>
+                    <button type="button">Sửa</button> <button type="button">Xoá</button>
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>2251061834</td>
+                <td>Nguyễn Văn Trường</td>
+                <td>truongnguyen234@gmail.com</td>
+                <td>Nam</td>
+                <td>21/12/2004</td>
+                <td>
+                    <button type="button">Sửa</button> <button type="button">Xoá</button>
+                </td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>2251061900</td>
+                <td>Vũ Hương Giang</td>
+                <td>yangdo14@gmail.com</td>
+                <td>Nữ</td>
+                <td>29/08/2004</td>
+                <td>
+                    <button type="button">Sửa</button> <button type="button">Xoá</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
